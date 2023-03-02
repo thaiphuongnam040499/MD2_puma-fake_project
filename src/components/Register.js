@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { act_post_user } from '../redux/actions'
 import axios from 'axios'
+import { NavLink, useNavigate } from 'react-router-dom'
 export default function Register() {
+    const navigate = useNavigate()
     const [newUser, setNewUser] = useState({
         userName: "",
         email: "",
@@ -67,12 +69,29 @@ export default function Register() {
         }
     }
     const dispatch = useDispatch()
-    const handleAdd = () => {
-        dispatch(act_post_user(newUser))
+    const handleAdd = (e) => {
+        let condition_1 =
+            newUser.userName !== "" &&
+            newUser.email !== "" &&
+            newUser.password !== "" &&
+            newUser.rePassword !== "" &&
+            newUser.address !== "" &&
+            newUser.phone !== "";
+        let condition_2 =
+            errMessage.userName === "" &&
+            errMessage.email === "" &&
+            errMessage.password === "" &&
+            errMessage.rePassword === "" &&
+            errMessage.address === "" &&
+            errMessage.phone === ""
+        if (condition_1 && condition_2) {
+                    dispatch(act_post_user(newUser));
+                    navigate("/login");
+        }
     }
-    const checkEmailExist = () => {
+    const checkEmailExist = (email) => {
         return axios
-            .get(`http://localhost:3001/users?email=${newUser.email}`)
+            .get(`http://localhost:3001/users?email=${email}`)
             .then((res) => res.data.length > 0)
             .catch((err) => console.log(err));
     };
@@ -156,7 +175,7 @@ export default function Register() {
                 {/* Register buttons */}
                 <div className="text-center mb-5">
                     <p>
-                        You already have an account? <a href="#!">Login</a>
+                        You already have an account? <NavLink to={'/login'}>Login</NavLink>
                     </p>
                     <p>or sign up with:</p>
                     <button type="button" className="btn btn-link btn-floating mx-1">

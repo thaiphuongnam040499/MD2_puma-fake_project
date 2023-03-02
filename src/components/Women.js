@@ -2,167 +2,104 @@ import React from 'react'
 
 export default function Women() {
     return (
-        <div>
-            <div className="menu mx-4">
-                <h2 className="my-5">SHOP ALL WOMEN'S STYLES</h2>
-                <div className="d-flex justify-content-between">
-                    <div className="menu_btn ">
-                        <button type="button" className="btn btn-outline-dark me-2">
-                            Gender <i className="bi bi-chevron-compact-down" />
-                        </button>
-                        <button type="button" className="btn btn-outline-dark me-2">
-                            Age Group <i className="bi bi-chevron-compact-down" />
-                        </button>
-                        <button type="button" className="btn btn-outline-dark me-2">
-                            Style <i className="bi bi-chevron-compact-down" />
-                        </button>
-                        <button type="button" className="btn btn-outline-dark me-2">
-                            Size <i className="bi bi-chevron-compact-down" />
-                        </button>
-                        <button type="button" className="btn btn-outline-dark me-2">
-                            Color <i className="bi bi-chevron-compact-down" />
-                        </button>
-                        <button type="button" className="btn btn-outline-dark me-2">
-                            Price <i className="bi bi-chevron-compact-down" />
-                        </button>
-                        <button type="button" className="btn btn-outline-dark me-2">
-                            Sport <i className="bi bi-chevron-compact-down" />
-                        </button>
-                        <button type="button" className="btn btn-outline-dark me-2">
-                            Collection <i className="bi bi-chevron-compact-down" />
-                        </button>
-                        <button type="button" className="btn btn-outline-dark me-2">
-                            Team <i className="bi bi-chevron-compact-down" />
-                        </button>
-                        <button type="button" className="btn btn-outline-dark me-2">
-                            Fit <i className="bi bi-chevron-compact-down" />
-                        </button>
-                    </div>
-                    <div>
-                        <button type="button" className="btn btn-outline-dark me-2">
-                            Sort by <i className="bi bi-chevron-compact-down" />
-                        </button>
-                    </div>
+        <div className='women'>
+            <div className="slide-four my-5">
+                <div className="slide_list">
+                    <h3 className="slide_item">MB.02 RICK AND MORTY</h3>
+                    <p className="slide_item">BY LAMELO BALL</p>
+                    <button className="slide_btn">SHOP MELO</button>
                 </div>
-                <h5 className="my-4">PRODUCT</h5>
-                <div className="list-card d-flex flex-wrap justify-content-center">
-                    <div className="card mx-2 my-2" style={{ width: "21rem" }}>
+            </div>
+            {/* NEW COLLECTIONS */}
+            <div className="new-collections my-5">
+                <div className="text-center">
+                    <h2>NEW COLLECTIONS HAVE ARRIVED</h2>
+                    <p>OUR LATEST COLLABS AND CURATIONS</p>
+                </div>
+                <div className="collecttions d-flex ">
+                    <div className="card me-2 text-center">
                         <img
-                            src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/195683/01/sv01/fnd/PNA/fmt/png/PUMA-x-BALMAIN-Court-Basketball-Shoes"
+                            src="https://cdn.sanity.io/images/qa41whrn/prod/f5bdf1934fc3ca27ce258a1e6b0dd4ab993dd688-1350x1350.webp?w=2160&q=80&auto=format"
                             className="card-img-top"
                             alt="..."
                         />
                         <div className="card-body">
-                            <h5 className="card-title">PUMA x BALMAIN Court Basketball</h5>
-                            <p className="card-text">$1000</p>
+                            <h5 className="card-title">PUMA x TMC</h5>
+                            <p className="card-text">THE HUSSLE WAY | STATUS SYMBOL</p>
                             <a href="#" className="btn btn-dark">
-                                new
+                                SHOP NOW
                             </a>
                         </div>
                     </div>
-                    <div className="card mx-2 my-2" style={{ width: "21rem" }}>
+                    <div className="card ms-2 text-center">
                         <img
-                            src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/538355/01/fnd/PNA/fmt/png/INFUSE-Woven-Women's-Jacket"
+                            src="https://cdn.sanity.io/images/qa41whrn/prod/5a1baf203f8b07e747c589374c17694304e08fcb-1536x1536.jpg?w=2160&q=80&auto=format"
                             className="card-img-top"
                             alt="..."
                         />
                         <div className="card-body">
-                            <h5 className="card-title">INFUSE Woven Women's Jacket</h5>
-                            <p className="card-text">$90</p>
+                            <h5 className="card-title">BLOCK PARTY COLLECTION</h5>
+                            <p className="card-text">CELEBRATING ALL THINGS HOOPS</p>
                             <a href="#" className="btn btn-dark">
-                                new
-                            </a>
-                        </div>
-                    </div>
-                    <div className="card mx-2 my-2" style={{ width: "21rem" }}>
-                        <img
-                            src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/538355/89/fnd/PNA/fmt/png/INFUSE-Woven-Women's-Jacket"
-                            className="card-img-top"
-                            alt="..."
-                        />
-                        <div className="card-body">
-                            <h5 className="card-title">INFUSE Woven Women's Jacket</h5>
-                            <p className="card-text">$90</p>
-                            <a href="#" className="btn btn-dark">
-                                new
-                            </a>
-                        </div>
-                    </div>
-                    <div className="card mx-2 my-2" style={{ width: "21rem" }}>
-                        <img
-                            src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/538356/01/fnd/PNA/fmt/png/INFUSE-Woven-Women's-Shorts"
-                            className="card-img-top"
-                            alt="..."
-                        />
-                        <div className="card-body">
-                            <h5 className="card-title">INFUSE Woven Women's Shorts</h5>
-                            <p className="card-text">$65</p>
-                            <a href="#" className="btn btn-dark">
-                                new
-                            </a>
-                        </div>
-                    </div>
-                    <div className="card mx-2 my-2" style={{ width: "21rem" }}>
-                        <img
-                            src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/538356/89/fnd/PNA/fmt/png/INFUSE-Woven-Women's-Shorts"
-                            className="card-img-top"
-                            alt="..."
-                        />
-                        <div className="card-body">
-                            <h5 className="card-title">INFUSE Woven Women's Shorts</h5>
-                            <p className="card-text">$65</p>
-                            <a href="#" className="btn btn-dark">
-                                new
-                            </a>
-                        </div>
-                    </div>
-                    <div className="card mx-2 my-2" style={{ width: "21rem" }}>
-                        <img
-                            src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/377411/02/sv01/fnd/PNA/fmt/png/PUMA-x-RICK-AND-MORTY-MB.02-Basketball-Shoes"
-                            className="card-img-top"
-                            alt="..."
-                        />
-                        <div className="card-body">
-                            <h5 className="card-title">
-                                PUMA x RICK AND MORTY MB.02 Basketball Shoes
-                            </h5>
-                            <p className="card-text">$140</p>
-                            <a href="#" className="btn btn-dark">
-                                new
-                            </a>
-                        </div>
-                    </div>
-                    <div className="card mx-2 my-2" style={{ width: "21rem" }}>
-                        <img
-                            src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/374915/75/sv01/fnd/PNA/fmt/png/Suede-Classic-XXI-Sneakers"
-                            className="card-img-top"
-                            alt="..."
-                        />
-                        <div className="card-body">
-                            <h5 className="card-title">Suede Classic XXI Sneakers</h5>
-                            <p className="card-text">$75</p>
-                            <a href="#" className="btn btn-dark">
-                                new
-                            </a>
-                        </div>
-                    </div>
-                    <div className="card mx-2 my-2" style={{ width: "21rem" }}>
-                        <img
-                            src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/621719/01/mod01/fnd/PNA/fmt/png/PUMA-x-MELO-Tee"
-                            className="card-img-top"
-                            alt="..."
-                        />
-                        <div className="card-body">
-                            <h5 className="card-title">PUMA x MELO TeePUMA</h5>
-                            <p className="card-text">$40</p>
-                            <a href="#" className="btn btn-dark">
-                                new
+                                SHOP NOW
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-
-        </div>
+            {/* END NEW COLLECTIONS */}
+            {/* WARDROBE */}
+            <div className="wardrobe my-5">
+                <div className="text-center">
+                    <h2>REFRESH YOUR WARDROBE</h2>
+                    <p>BUILD AN OUTFIT</p>
+                </div>
+                <div className="wardrobe-list d-flex justify-content-center">
+                    <div className="card me-2 text-center" style={{ width: "30rem" }}>
+                        <img
+                            src="https://cdn.sanity.io/images/qa41whrn/prod/c69e600106e97f2275a7a3c891f0d8aa51d4e253-750x750.webp?w=1440&q=80&auto=format"
+                            className="card-img-top"
+                            alt="..."
+                        />
+                        <div className="card-body">
+                            <h5 className="card-title">YOUR NEXT PAIR</h5>
+                            <p className="card-text">REFRESH YOUR KICKS</p>
+                            <a href="#" className="btn btn-dark">
+                                SHOP NOW
+                            </a>
+                        </div>
+                    </div>
+                    <div className="card me-2 text-center" style={{ width: "30rem" }}>
+                        <img
+                            src="https://cdn.sanity.io/images/qa41whrn/prod/e66421c93590b28121a773d4bae863e27e142335-750x750.webp?w=1440&q=80&auto=format"
+                            className="card-img-top"
+                            alt="..."
+                        />
+                        <div className="card-body">
+                            <h5 className="card-title">FRESH LOOKS</h5>
+                            <p className="card-text">FROM HEAD TO TOE</p>
+                            <a href="#" className="btn btn-dark">
+                                SHOP NOW
+                            </a>
+                        </div>
+                    </div>
+                    <div className="card me-2 text-center" style={{ width: "30rem" }}>
+                        <img
+                            src="https://cdn.sanity.io/images/qa41whrn/prod/3739980d44e63c2a13fa25cea00e5b6f4af6a632-750x750.webp?w=1440&q=80&auto=format"
+                            className="card-img-top"
+                            alt="..."
+                        />
+                        <div className="card-body">
+                            <h5 className="card-title">ROUND OUT YOUR LOOK</h5>
+                            <p className="card-text">TOP IT OFF IN STYLE</p>
+                            <a href="#" className="btn btn-dark">
+                                SHOP NOW
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* END WARDROBE */}
+            </div>
     )
 }

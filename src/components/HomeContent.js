@@ -1,9 +1,35 @@
 import React from 'react'
 
-export default function Men() {
-    return (
-        <div className='men'>
-            <div className="slide-men my-5">
+export default function HomeContent() {
+    
+  return (
+    <div>
+        <div className="slide">
+                <div className="relative w-full">
+                    <video
+                        className="w-100"
+                        autoPlay={true}                   
+                        playsInline={true}
+                        loop={true}
+                        muted
+                    >
+                        <source type="video/mp4" src="https://cdn.sanity.io/files/qa41whrn/prod/1e421971a092f7d6c66197c6b3b07e2fcc96c88d.mp4" />
+                    </video>
+                </div>
+                <div className="slide_list slide-one">
+                    <h3 className="slide_item">FOREVER. CLASSIC.</h3>
+                    <p className="slide_item">ICON STATUS</p>
+                    <button className="slide_btn me-2">SHOP NOW</button>
+                    <button className="slide_btn">LEARN MORE</button>
+                </div>
+            </div>
+            {/* end slide */}
+            {/* collection */}
+            <div className="collection my-5">
+                <h3 className="text-center">EXPLORE THE COLLECTION</h3>
+            </div>
+            {/* end collection */}
+            <div className="slide-two my-5">
                 <div className="slide_list">
                     <h3 className="slide_item">MB.02 RICK AND MORTY</h3>
                     <p className="slide_item">BY LAMELO BALL</p>
@@ -33,7 +59,7 @@ export default function Men() {
                     </div>
                     <div className="card ms-2 text-center">
                         <img
-                            src="https://cdn.sanity.io/images/qa41whrn/prod/7b4fe88272c62f5f7732974c5416f68c137b5185-500x500.webp?w=2160&q=80&auto=format"
+                            src="https://cdn.sanity.io/images/qa41whrn/prod/5a1baf203f8b07e747c589374c17694304e08fcb-1536x1536.jpg?w=2160&q=80&auto=format"
                             className="card-img-top"
                             alt="..."
                         />
@@ -57,7 +83,7 @@ export default function Men() {
                 <div className="wardrobe-list d-flex justify-content-center">
                     <div className="card me-2 text-center" style={{ width: "30rem" }}>
                         <img
-                            src="https://cdn.sanity.io/images/qa41whrn/prod/2d173c4466a2c15f679130a73ac1cc78daca9491-1350x1350.webp?w=2160&q=80&auto=format"
+                            src="https://cdn.sanity.io/images/qa41whrn/prod/7a4217af09d256858ee73de4196114943f977450-750x750.webp?w=2160&q=80&auto=format"
                             className="card-img-top"
                             alt="..."
                         />
@@ -85,7 +111,7 @@ export default function Men() {
                     </div>
                     <div className="card me-2 text-center" style={{ width: "30rem" }}>
                         <img
-                            src="https://cdn.sanity.io/images/qa41whrn/prod/ad0d31b7d0c74c0992d99449d7e2f7b0f60e3e04-750x750.webp?w=2160&q=80&auto=format"
+                            src="https://cdn.sanity.io/images/qa41whrn/prod/7072034ac409a77dbe0577fc2151623568f63db2-750x750.webp?w=2160&q=80&auto=format"
                             className="card-img-top"
                             alt="..."
                         />
@@ -100,6 +126,6 @@ export default function Men() {
                 </div>
             </div>
             {/* END WARDROBE */}
-            </div>
-    )
+    </div>
+  )
 }

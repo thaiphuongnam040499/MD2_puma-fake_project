@@ -1,7 +1,37 @@
 .App {
   text-align: center;
 }
+.navbar-admin{
+  height: 100vh;
+}
+.radio:hover{
+  background-color: bisque;
+  
+}
+.newArrivals{
+  margin-top: 70px;
+}
+.women{
+  margin-top: 70px;
 
+}
+.men{
+  margin-top: 70px;
+}
+.kids{
+  margin-top: 70px;
+}
+.radio span{
+  text-align: center;
+  margin:  auto;
+  line-height: 43px;
+  width: 50px;
+  height: 50px;
+}
+.navigation{
+  display: flex;
+  justify-content: center;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

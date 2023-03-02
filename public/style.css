@@ -176,7 +176,7 @@ left: -300px;
     padding: 0 0 0 30px;
 }
 
-.product {
+.products {
     margin-top: 100px;
 }
 
@@ -203,6 +203,50 @@ left: -300px;
 
 .slide-two {
     background-image: url(https://cdn.sanity.io/images/qa41whrn/prod/892790d40d2521744da4681c6744a015e126c39b-1440x500.jpg?w=2160&q=80&auto=format);
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+}
+.slide-three {
+    background-image: url(https://m.media-amazon.com/images/G/01/2022/puma/22AW_Zappos_Site_Brand-Update_Hero-Image_1_1440x500_1.jpg);
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+}
+.slide-four {
+    background-image: url(https://m.media-amazon.com/images/G/01/2023/homepage2.27/COOP-UGG-OUTERWEAR-AOE-960X500.jpg);
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+}
+.slide-men {
+    background-image: url(https://cdn.sanity.io/images/qa41whrn/prod/8beeed27fb33da05dbdddb25ac323c25f6b2b0e7-1440x500.jpg?w=2160&q=80&auto=format);
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+}
+.slide-arrivals {
+    background-image: url(https://cdn.sanity.io/images/qa41whrn/prod/8d93edcca9ffdf87814303130b665fd943418701-1440x500.jpg?w=2160&q=80&auto=format);
     background-repeat: no-repeat;
     /* Do not repeat the image */
     background-size: cover;
@@ -286,18 +330,15 @@ left: -300px;
     overflow-y: auto;
     /* Scrollable contents if viewport is shorter than content. */
 }
-
-.admin {
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.admin-list {
-    margin-top: 100px;
-}
 .form-register{
     width: 30%;
 }
 .form-login{
     width: 30%;
+}
+.title-product{
+    width: 300px;
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
 }
